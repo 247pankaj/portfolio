@@ -2,23 +2,22 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #f4f6f8;
-    color: #343a40;
-    line-height: 1.6;
-    font-size: 16px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-size: 16px;
+    color: #333;
+    background: #f4f6f8;
 }
 
 .container {
     max-width: 900px;
-    margin: auto;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
@@ -28,79 +27,49 @@ header {
     padding: 40px 0;
 }
 
-.header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.profile-photo:hover {
-    transform: scale(1.05);
-}
-
-h1 {
+.header-content h1 {
     font-size: 2.5rem;
-    margin: 10px 0;
 }
 
-.subtitle {
-    font-size: 1.2em;
-    margin-bottom: 15px;
+.profile-photo-large {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
 }
 
 nav {
     background: #343a40;
-    color: white;
     padding: 10px 0;
-    margin-bottom: 20px;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     justify-content: center;
     gap: 20px;
+    list-style: none;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #007bff;
 }
 
 main {
     flex: 1;
-    padding: 20px 0;
     text-align: center;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    padding: 20px;
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
     background: #007bff;
     color: white;
-    text-decoration: none;
+    padding: 10px 20px;
     border-radius: 5px;
-    font-weight: bold;
+    text-decoration: none;
     transition: background 0.3s ease;
 }
 
@@ -109,18 +78,9 @@ h2 {
 }
 
 footer {
-    text-align: center;
-    padding: 20px 0;
     background: #333;
     color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
 }
